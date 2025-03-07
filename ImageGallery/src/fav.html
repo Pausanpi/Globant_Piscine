@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+	<link rel="icon" href="../assets/panda.svg">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header class="header">
+        <img id="home-button" src="../assets/panda.svg" alt="cora" class="pinterest-icon">
+
+		<form id="search-form" class="search-container">
+			<input type="text" id="search-query" class="search-input" placeholder="Buscar imágenes..." required>
+		</form>
+        
+        <div class="header-icons">
+			<button class="icon-button1" id="favorites-button">
+                <img src="../assets/cora_lleno.svg" alt="cora" class="icon-image">
+            </button>
+            <div class="icon-button2">
+				<img id="profile-img" src="../assets/gato.jpg" alt="Icono" class="icon-image">
+                <div id="dropdown" class="dropdown-content">
+                    <a href="#" id="logoutButton">Logout</a>
+                </div>
+			</div>
+            
+        </div>
+    </header>
+
+    <div id="gallery" class="gallery"></div>
+
+    <script src="fav.js"></script>
+</body>
+</html>
